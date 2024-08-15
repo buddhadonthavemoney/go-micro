@@ -13,7 +13,7 @@ func (app *Config) routes() http.Handler{
 	mux.Use(
 		cors.Handler(
 			cors.Options{
-				AllowedOrigins: []string{"https://*", "https://*"},
+				AllowedOrigins: []string{"http://*", "https://*"},
 				AllowedMethods: []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 				AllowedHeaders: []string{"Accept", "Authorization", "Content-Type", "X-CSRF-Token"},
 				ExposedHeaders: []string{"Link"},
